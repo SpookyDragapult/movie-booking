@@ -1,0 +1,199 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <!--Required meta-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--bootstrap link-->
+        <link href="css\bootstrap.min.css" rel="stylesheet">
+        <link href="css\ajstyles.css" rel="stylesheet">
+        
+
+        <title>TicketX</title>
+    </head>
+    <body>
+
+            <!-- Tis 'ere be navbar-->
+            <nav class="navbar sticky-top navbar-dark bg-dark">
+                <div class="container-xl">
+                    <a class="navbar-brand" href="#">Ticketx</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-control="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Your Tickets</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Theatres</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                          </li>
+                        </ul>
+                        <form class="d-flex">
+                          <input class="form-control me-2" type="search" placeholder="Search for movies or theatres" aria-label="Search">
+                          <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                      </div>
+                </div>
+            </nav>
+
+            <!--tis 'ere be ads-->
+            <div id="carouselExampleControls" class="carousel slide pt-0 md-5" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="img-wrapper">
+                  <img src="assets/pepsi.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="img-wrapper">
+                  <img src="assets/coke.jpg" class="d-block w-100" alt="coke">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="img-wrapper">
+                  <img src="assets/gatorade.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+        
+            <!-- Tis 'ere be the movies-->
+          <div class="container-xl pb-3 pt-3 mt-3 border bg-light" style="border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+            <h2 class="text-center" style="padding-bottom: 20px;">Now on Cinemas</h2> 
+             <div class="row" id="movie-list">
+              <!-- List Moive -->
+          </div>
+
+          </div>
+          
+          <!-- Tis 'ere be the upcoming movies-->
+           
+          <div class="container-xl pb-3 pt-3 mt-3 border bg-light" style="border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);" align="center">
+    <h2 class="text-center pb-5" style="padding-bottom: 20px;">Upcoming Movies</h2> 
+      
+    <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators" style="margin-top: 20px; margin-bottom: 0%;">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        
+        <div class="carousel-item active">
+          <div class="card" style="width: 32rem;">
+            <img src="assets/fnaf2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Five Nights At Freddy's 2</h5>
+              <p class="card-text bold">December 2025</p>
+              </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card" style="width: 32rem;">
+            <img src="assets/minecraft.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Minecraft The Movie</h5>
+              <p class="card-text bold">March 2025</p>
+              </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card" style="width: 32rem;">
+            <img src="assets/venom3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Venom: The Last Dance</h5>
+              <p class="card-text bold">October 2024</p>
+              </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card" style="width: 32rem;">
+            <img src="assets/rohirrim.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">The Lordof the Rings: The War of the Rohirrim</h5>
+              <p class="card-text bold">October 2024</p>
+              </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    </div>
+          <!--Modal-->
+          <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="bookingModalLabel">Book Your Ticket</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="movieTitle" class="form-label">Movie Title</label>
+                            <input type="text" class="form-control" id="movieTitle" readonly>
+                        </div>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="seats" class="form-label">Number of Seats</label>
+                            <input type="number" class="form-control" id="seats" required min="1" max="10">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" onclick="bookTicket()">Book Ticket</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- tis 'ere be the footer-->
+         <footer class="bg-dark">
+          <ul class="nav justify-content-center light" style="text-decoration: none;">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Help</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Our Partners</a>
+            </li>
+          
+          </ul>
+         </footer>
+         <script src="js\bootstrap.bundle.min.js"></script>
+        <script src="js\script.js"></script>
+        <script src="js\xavier.js"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    </body>
+
+</html>
